@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HW11_Q2</title>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div>
+        <span>Shape:</span>
+        <select name="shape" id="geometricshapes">
+          <option>Select Shape</option>
+          <option>Circle</option>
+          <option>Square</option>
+          <option>Rectangle</option>
+          <option>Cylinder</option>
+        </select>
+      </div>
+
+      <div class="label-input">
+        <label for="radius">Radius:</label>
+        <input type="number" id="radius" disabled />
+      </div>
+      <div class="label-input">
+        <label for="width">Width:</label>
+        <input type="number" id="width" disabled />
+      </div>
+      <div class="label-input">
+        <label for="height">Height:</label>
+        <input type="number" id="height" disabled />
+      </div>
+      <button class="calc">Calculate</button>
+    </form>
+
+    <div class="result">
+      <div class="perimeter">
+        <span>Perimeter:</span>
+        <div class="resultOfPerimeter">0</div>
+      </div>
+      <div class="area">
+        <span>Area:</span>
+        <div class="resultOfArea">0</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
